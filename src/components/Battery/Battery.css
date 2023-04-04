@@ -1,0 +1,156 @@
+.battery {
+    width: 100%;
+    height: 100vh;
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.battery .container__battery {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    width: 70%;
+    gap: 7vw;
+    padding-left: 5%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container__battery img {
+    width: 100%;
+}
+
+.container__battery h1 {
+    color: #ffff;
+    font-size: 1.5vw;
+    margin-bottom: 1.2vw;
+}
+
+.container__battery p {
+    font-size: .8vw;
+    color: #787878;
+    line-height: 1.4vw;
+}
+
+.row__battery {
+    display: flex;
+    gap: 1.4vw;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.row__battery img {
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #c4c4c425;
+    padding: .3vw;
+}
+
+.row__battery span {
+    color: #B5B5B5;
+    font-size: .9vw;
+}
+
+.grid__battery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vw;
+    margin: 2vw 0;
+}
+
+.battery .control-dots {
+    display: none;
+}
+
+.battery .img__battery button {
+    display: none;
+}
+
+.battery .img__battery *:not(li) {
+    border: none !important;
+}
+
+.battery .img__battery li {
+    cursor: pointer;
+    padding: 1vw;
+}
+
+.carousel .slide img {
+    width: 18vw;
+    height: 24vw;
+    object-fit: contain;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider {
+    height: 24vw !important;
+}
+
+.thumbs li {
+    border: 1px solid rgba(255, 255, 255, 0.315) !important;
+    padding: 1vw;
+    margin: 0 !important;
+    width: 7vw !important;
+    height: 7vw !important;
+}
+
+.thumbs-wrapper.axis-vertical {
+    margin: 0 !important;
+    position: relative;
+    left: -4vw;
+    bottom: -4vw;
+}
+
+.thumbs-wrapper.axis-vertical img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel .thumbs-wrapper {
+    overflow: visible;
+}
+
+.ab__colors {
+    z-index: 999;
+    position: absolute;
+    left: 15vw;
+    top: 10vw;
+    display: grid;
+    gap: 1vw;
+    position: absolute;
+}
+
+.ab__colors > div > div{
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+}
+.ab__colors  .red {
+    background-color: red;
+}
+.ab__colors  .blue {
+    background-color: blue;
+}
+.ab__colors  .yellow {
+    background-color: yellow;
+}
+
+.ab__colors>div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    width: 2.3vw;
+    height: 2.3vw;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    border-radius: 50%;
+}
+.ab__colors > div:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
+.carousel-status{
+    opacity: 0;
+}

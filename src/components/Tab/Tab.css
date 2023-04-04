@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.power__cont {
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 118px);
+}
+.bg__dark{
+    background-color: #141414;
+    background-image: url(../../assets/images/fanar.png);
+    background-position: 100% 100vh;
+    background-size: cover;
+    padding-top: 3.4vw;
+}
+.Tab_right ul li {
+    cursor: pointer;
+    list-style: none;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 1vw;
+
+    color: #717070;
+}
+
+.Tab_right ul {
+    min-width: 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3vw;
+}
+
+.Tab_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.power__cont .react-tabs {
+    gap: 5vw;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 16vw auto;
+}
+
+.power__cont .react-tabs__tab-panel {
+    display: flex;
+    gap: 3vw;
+}
+
+.power__cont .tabProduct_info h1 {
+    font-weight: 700;
+    font-size: 4vw;
+    font-family: "Outfit", sans-serif;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+}
+
+.power__cont .tabProduct_info p {
+    font-weight: 400;
+    font-size: .8vw;
+    line-height: 21px;
+    /* or 175% */
+
+    font-family: "Outfit", sans-serif;
+    color: #787878;
+
+}
+
+.power__cont .tabProduct_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    justify-content: space-around;
+}
+
+.tabProduct_info button {
+    background: #C83A3A;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    transition: 0.5s;
+    width: 10vw;
+    padding: .5vw;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.tabProduct_info button:hover {
+    opacity: .6;
+}
+
+.react-tabs__tab--selected button {
+    color: #FFFFFF !important;
+}
+
+.react-tabs__tab:focus-visible {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.tabProduct_img img {
+    width: 21vw;
+    height: 32vw;
+    object-fit: contain;
+}
+.tabProduct_info span{
+    font-weight: 100;
+    font-size: 2.5vw;
+    color: #fff;
+}
+.transparent{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    text-align: left;
+    color: #787878;
+    cursor: pointer;
+}

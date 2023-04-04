@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+
+footer *, footer h2 a {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+footer a:hover{
+    color: #fff;
+}
+
+footer .container {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: space-between;
+    padding-bottom: 1vw;
+}
+
+footer>div>div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 1.2vw;
+    color: #868686;
+    margin: 1vw 0;
+}
+
+footer span, footer a {
+    color: #868686;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer span:hover {
+    color: #fff;
+}
+
+footer h2 {
+    font-size: 1.6vw;
+}
+
+footer h1 {
+    font-size: 2.2vw !important;
+}
+
+footer .row__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 3vw;
+    left: 15%;
+    bottom: 0;
+    padding: 2vw 0;
+    border-top: 1px solid #8686868f;
+}
+
+footer article {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+footer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

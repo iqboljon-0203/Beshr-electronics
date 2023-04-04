@@ -1,0 +1,96 @@
+.about {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/images/img/onas.png);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about * {
+    color: #fff;
+}
+
+.about__body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 70%;
+    margin: 0 auto;
+    gap: 7vw;
+}
+
+.about__body img {
+    width: 18vw;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.about h1 span {
+    opacity: 1;
+    font-size: 2.4vw;
+}
+
+.about__body p {
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    margin: 2vw 0;
+}
+
+.about__body span {
+    font-size: 1vw;
+    margin-bottom: 2vw;
+    opacity: .3;
+    text-transform: uppercase;
+    line-height: 1.4vw;
+}
+
+.item__r {
+    width: 7vw;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vw 1vw;
+    gap: .7vw;
+    background-color: #141414;
+}
+
+.row__about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3vw;
+    gap: 5vw;
+}
+
+.item__r span {
+    margin: 0;
+}
+
+.item__r {
+    z-index: 9;
+    position: relative;
+}
+
+.o__col {
+    display: grid;
+}
+
+.o__col>div:nth-child(2) {
+    position: relative;
+    right: 2vw;
+}
+
+.o__col>div {
+    padding: 1vw;
+    overflow: hidden;
+    width: 20vw;
+    border: 1px solid #fff;
+    transition: .3s;
+}
+
+.o__col>div:hover {
+    transform: scale(1.3);
+    position: relative;
+    z-index: 99;
+}

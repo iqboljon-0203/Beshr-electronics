@@ -1,0 +1,33 @@
+.partner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4vw;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.partner img {
+    width: 10vw;
+    height: 5vw;
+    object-fit: contain;
+    transition: .2s;
+    cursor: pointer;
+}
+.partner img:hover{
+    transform: scale(1.2);
+}
+.item__partner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__partner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(../../assets/images/fanar.png);
+    background-size: cover;
+    background-color: #141414;
+}

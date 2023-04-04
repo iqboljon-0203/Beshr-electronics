@@ -1,0 +1,26 @@
+.body .Lang > button img {
+    height: 1vw;
+    width: 1.7vw;
+    object-fit: cover;
+    cursor: pointer;
+    margin-top: .4vw;
+}
+.body .Lang > button{
+    background-color: transparent;
+    font-size: 1vw;
+    border: transparent;
+    cursor: pointer;
+}
+.Lang > button.active{
+    padding: 1vw;
+    background: #373737;
+    color: #fff;
+}
+.Lang{
+    display: grid;
+    gap: 1vw;
+    position: absolute;
+    z-index: 999;
+    right: 15%;
+    top: 40%;
+}
